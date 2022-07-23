@@ -1,0 +1,16 @@
+@use "src/styles/functions" as f;
+@import "src/styles/variables";
+
+.container {
+  width: 100%;
+  max-width: f.rem(240px);
+  margin: 0 auto f.rem(16px);
+  box-sizing: border-box;
+}
+
+.error {
+  display: block;
+  color: $color-error;
+  font-size: $font-size-xs;
+  margin-top: f.rem(4px);
+}

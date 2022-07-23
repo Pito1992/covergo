@@ -1,0 +1,15 @@
+@use "src/styles/functions" as f;
+@import "src/styles/variables";
+
+.wrapper {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.premiumHighlight {
+  margin-top: f.rem(32px);
+}
+
+.formInner {
+  margin-bottom: f.rem(32px);
+}

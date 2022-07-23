@@ -1,0 +1,10 @@
+@use "src/styles/functions" as f;
+@import "src/styles/variables";
+
+.label {
+  display: block;
+  font-size: $font-size-s;
+  line-height: 1.5;
+  margin-bottom: f.rem(8px);
+  font-weight: 400;
+}

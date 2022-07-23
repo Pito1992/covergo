@@ -1,0 +1,15 @@
+@use "src/styles/functions" as f;
+@import "src/styles/variables";
+
+.container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: f.rem(16px);
+}
+
+.button {
+  min-width: f.rem(120px);
+  margin-top: 48px;
+}

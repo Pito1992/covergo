@@ -1,0 +1,19 @@
+@use "src/styles/functions" as f;
+@import "src/styles/variables";
+
+.container {
+  width: 100%;
+  max-width: f.rem(900px);
+  margin: 0 auto;
+  height: 100%;
+  min-height: 100vh;
+  background-color: $color-light;
+  box-sizing: border-box;
+  padding: f.rem(32px) 0 0;
+  
+  &.center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}

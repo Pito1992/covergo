@@ -1,0 +1,15 @@
+@use "src/styles/functions" as f;
+@import "src/styles/variables";
+
+.option {
+  padding: f.rem(10px);
+
+  &:hover {
+    background-color: rgba($color-primary, $opacity-low);
+  }
+
+  &.isSelected {
+    color: $color-light;
+    background-color: $color-primary;
+  }
+}

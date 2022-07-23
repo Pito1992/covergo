@@ -1,0 +1,8 @@
+@use "src/styles/functions" as f;
+@import "src/styles/variables";
+
+.icon {
+  fill: $color-dark;
+  width: f.rem(12px);
+  height: f.rem(12px);
+}

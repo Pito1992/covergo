@@ -1,0 +1,19 @@
+@import 'src/styles/variables';
+
+@mixin font-face($name, $weight) {
+  $fontUrlPrefix: #{$font-path}/#{$font-family-primary}/#{$font-family-primary}-#{$name};
+  
+	@font-face {
+		font-family: $font-family-primary;
+		font-weight: $weight;
+		src: local('#{$font-family-primary}'), url('#{$fontUrlPrefix}.eot');
+    src: local('#{$font-family-primary}'), url('#{$fontUrlPrefix}.eot?#iefix') format('embedded-opentype'),
+      url('#{$fontUrlPrefix}.woff2') format('woff2'), 
+      url('#{$fontUrlPrefix}.woff') format('woff'),
+      url('#{$fontUrlPrefix}.ttf') format('truetype');
+	}
+}
+
+@include font-face('Light', 100);
+@include font-face('Regular', 400);
+@include font-face('Bold', bold);

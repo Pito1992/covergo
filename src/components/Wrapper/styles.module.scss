@@ -1,0 +1,22 @@
+@use "src/styles/functions" as f;
+@import "src/styles/variables";
+
+.wrapper {
+  width: 100%;
+  background-color: $color-gray;
+  text-align: center;
+  padding: 3rem 1rem;
+  min-height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-sizing: border-box;
+
+  > button {
+    margin-top: 1rem;
+  }
+
+  &.transparent {
+    background-color: transparent;
+  }
+}

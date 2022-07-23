@@ -1,0 +1,43 @@
+@use "src/styles/functions" as f;
+@import "src/styles/variables";
+
+.checkbox {
+  width: 100%;
+  margin-bottom: 0;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+
+  .text {
+    display: block;
+    font-size: $font-size-s;
+    line-height: 1.5;
+    font-weight: 400;
+  }
+
+  .checkboxIcon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: f.rem(16px);
+    height: f.rem(16px);
+    border-radius: 50%;
+    background-color: transparent;
+    border: 2px solid $color-border;
+    overflow: hidden;
+    color: transparent;
+    cursor: pointer;
+    outline: none;
+    box-sizing: border-box;
+    margin-right: f.rem(8px);
+  }
+
+  input[type="radio"] {
+    display: none;
+
+    &:checked + .checkboxIcon {
+      border-color: $color-primary;
+      border-width: 5px;
+    }
+  }
+}

@@ -1,0 +1,21 @@
+@use "src/styles/functions" as f;
+@import "src/styles/variables";
+
+.input {
+  width: 100%;
+  font-size: $font-size-s;
+  border: 2px solid $color-border;
+  border-radius: $border-radius;
+  height: f.rem(42px);
+  padding: f.rem(8px);
+  box-sizing: border-box;
+  outline: none;
+
+  &:focus {
+    border-color: $color-dark;
+  }
+
+  &.hasError {
+    border-color: $color-error;
+  }
+}

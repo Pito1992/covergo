@@ -1,0 +1,14 @@
+@import 'src/styles/variables';
+@import 'src/styles/fonts';
+@import 'normalize.css';
+
+html {
+  font-size: $font-size-root;
+}
+
+body {
+  margin: 0;
+  font-family: $font-family-primary, $font-family-secondary, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}

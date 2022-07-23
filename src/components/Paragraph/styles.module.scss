@@ -1,0 +1,8 @@
+@import "src/styles/variables";
+
+.paragraph {
+  font-size: $font-size-root;
+  line-height: 1.5;
+  margin-top: 0;
+  white-space: pre-line;
+}
